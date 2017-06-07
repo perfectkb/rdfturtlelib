@@ -2,19 +2,12 @@
 
 RDF Turtle library that parses an RDF turtle document and returns a JSON object with detailed status of terms used in document as below;
 
-
-	{ "result": "OK",
-	  "statements": 
-		[{ "subject": "http://www.engie.fr/resource/CA00001B3", "predicateStatus": "Verified", "objectStatus": "Verified" }, 
-			{ "subject": "http://www.engie.fr/resource/CA00001B3", "predicateStatus": "Verified", "objectStatus": "Literal" }, 
-			{ "subject": "http://www.engie.fr/resource/CA00001B3", "predicateStatus": "Verified", "objectStatus": "Literal" }, 
-			{ "subject": "http://www.engie.fr/resource/CA00001B3", "predicateStatus": "Verified", "objectStatus": "Literal" }, 
-			{ "subject": "http://www.engie.fr/resource/CA00001B3", "predicateStatus": "Verified", "objectStatus": "Object term used could not verified in prefixed IRI" }, 
-			{ "subject": "http://www.engie.fr/resource/CA00001B3", "predicateStatus": "Verified", "objectStatus": "Object term used could not verified in prefixed IRI" }, 
-			{ "subject": "http://www.engie.fr/resource/CA00001B3/model", "predicateStatus": "Verified", "objectStatus": "Object term used could not verified in prefixed IRI" }, 
-			{ "subject": "http://www.engie.fr/resource/CA00001B3/model", "predicateStatus": "Verified", "objectStatus": "Literal" }, 
-			{ "subject": "http://www.engie.fr/resource/CA00001B3/model", "predicateStatus": "Verified", "objectStatus": "Literal" }
-		]}
+	{
+	    "result": "OK",
+	    "statements": [
+	        { "subject": "http://www.engie.fr/laptop", "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "predicateStatus": "Verified", "objectStatus": "Verified" },
+	        { "subject": "http://www.engie.fr/laptop", "predicate": "http://www.w3.org/2000/01/rdf-schema#label", "predicateStatus": "Verified", "objectStatus": "Literal" }
+	    ]
 	}
 
 following conformance checkings are done n the document;

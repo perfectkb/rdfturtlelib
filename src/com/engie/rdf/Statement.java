@@ -46,6 +46,9 @@ public class Statement {
 	
 	/** subject */
 	private String subject;
+	
+	/** predicate */
+	private String predicate;
 
 	/** The predicate status. */
 	private String predicateStatus;
@@ -61,6 +64,7 @@ public class Statement {
 	 */
 	public Statement(Triple t) {
 		this.subject = t.getSubject().toString();
+		this.predicate = t.getPredicate().toString();
 		PipedRDFIterator<Triple> iter = new PipedRDFIterator<>();
 		PipedRDFStream<Triple> inputStream = new PipedTriplesStream(iter);
 
